@@ -59,6 +59,6 @@ app.use('/conversation', conversationRoute);
 
 
 
-server.listen(8000, () => {
-    console.log('listening on port 8000')
+server.listen(process.env.PORT, () => {
+    console.log(`listening on port ${process.env.PORT}`)
 })
